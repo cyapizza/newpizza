@@ -28,6 +28,10 @@ function aud_play_pause() {
 }
 </script>
   
+<audio preload="auto" autoplay="autoplay">
+      <source src="rollinwiththeflow.mp3">
+</audio>
+  
 </head>
 <body>
   <section class="header1 cid-rv1kaGFcUT" id="header16-1">
@@ -81,9 +85,9 @@ function aud_play_pause() {
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
-<audio preload="auto" autoplay="autoplay">
-      <source src="rollinwiththeflow.mp3">
-</audio>
+<div class="text-xs-center">
+  <a class="btn btn-danger btn-black-outline mbr-editable-button" onclick="aud_play_pause()" href="javascript:void(0);">PLAY / PAUSE</a>
+</div>
   
 </body>
 </html>
