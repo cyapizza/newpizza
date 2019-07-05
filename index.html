@@ -16,18 +16,21 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-<iframe src="silence.mp3" allow="autoplay" id="iFrameaudio" style="display:none"></iframe>
-  
-<audio autoplay id="myAudio">
+    
+<iframe src="rollinwiththeflow.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
+
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+      $('#iframeAudio').remove()
+    }
+  else{
+     $('#playAudio').remove()
+  }  
+
+<audio autoplay loop id="myAudio">
       <source src="rollinwiththeflow.mp3" type="audio/mp3">
 </audio>
-
-<script>
-window.onload = function() {
-  var context = new AudioContext();
-}
-</script>  
 
 <script>
 function aud_play_pause() {
