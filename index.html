@@ -28,9 +28,11 @@ function aud_play_pause() {
 }
 </script>
   
-<audio id="myAudio" preload="auto" autoplay="autoplay" loop="loop">
-      <source src="rollinwiththeflow.mp3">
+<audio id="myAudio" preload autoplay loop>
+      <source src="rollinwiththeflow.mp3" type="audio/mp3">
 </audio>
+  
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   
 </head>
 <body style="background-color:#6633ff">
