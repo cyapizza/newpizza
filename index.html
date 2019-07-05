@@ -20,13 +20,15 @@
 <iframe src="rollinwiththeflow.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe>
 
+  <script>
   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     if(!isChrome){
       $('#iframeAudio').remove()
     }
   else{
      $('#playAudio').remove()
-  }  
+  }
+  </script>
 
 <audio autoplay loop id="myAudio">
       <source src="rollinwiththeflow.mp3" type="audio/mp3">
