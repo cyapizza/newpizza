@@ -1102,84 +1102,107 @@
     });
 })(jQuery);
 
-NUM_CONFETTI = 350
-COLORS = [[85,71,106], [174,61,99], [219,56,83], [244,92,68], [248,182,70]]
-PI_2 = 2*Math.PI
+/*
+ * decaffeinate suggestions:
+ * DS101: Remove unnecessary use of Array.from
+ * DS102: Remove unnecessary code created because of implicit returns
+ * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
+ */
+const NUM_CONFETTI = 350;
+const COLORS = [[85,71,106], [174,61,99], [219,56,83], [244,92,68], [248,182,70]];
+const PI_2 = 2*Math.PI;
 
 
-canvas = document.getElementById "world"
-context = canvas.getContext "2d"
-window.w = 0
-window.h = 0
+const canvas = document.getElementById("world");
+const context = canvas.getContext("2d");
+window.w = 0;
+window.h = 0;
 
-resizeWindow = ->
-  window.w = canvas.width = window.innerWidth
-  window.h = canvas.height = window.innerHeight
+const resizeWindow = function() {
+  window.w = (canvas.width = window.innerWidth);
+  return window.h = (canvas.height = window.innerHeight);
+};
 
-window.addEventListener 'resize', resizeWindow, false
+window.addEventListener('resize', resizeWindow, false);
   
-window.onload = -> setTimeout resizeWindow, 0
+window.onload = () => setTimeout(resizeWindow, 0);
 
-range = (a,b) -> (b-a)*Math.random() + a
+const range = (a,b) => ((b-a)*Math.random()) + a;
 
-drawCircle = (x,y,r,style) ->
-  context.beginPath()
-  context.arc(x,y,r,0,PI_2,false)
-  context.fillStyle = style
-  context.fill()
+const drawCircle = function(x,y,r,style) {
+  context.beginPath();
+  context.arc(x,y,r,0,PI_2,false);
+  context.fillStyle = style;
+  return context.fill();
+};
 
-xpos = 0.5
+let xpos = 0.5;
 
-document.onmousemove = (e) ->
-  xpos = e.pageX/w
+document.onmousemove = e => xpos = e.pageX/w;
 
-window.requestAnimationFrame = do ->
+window.requestAnimationFrame = (() =>
   window.requestAnimationFrame       ||
   window.webkitRequestAnimationFrame ||
   window.mozRequestAnimationFrame    ||
   window.oRequestAnimationFrame      ||
   window.msRequestAnimationFrame     ||
-  (callback) -> window.setTimeout(callback, 1000 / 60)
+  (callback => window.setTimeout(callback, 1000 / 60))
+)();
 
 
-class Confetti
+class Confetti {
 
-  constructor: ->
-    @style = COLORS[~~range(0,5)]
-    @rgb = "rgba(#{@style[0]},#{@style[1]},#{@style[2]}"
-    @r = ~~range(2,6)
-    @r2 = 2*@r
-    @replace()
+  constructor() {
+    this.style = COLORS[~~range(0,5)];
+    this.rgb = `rgba(${this.style[0]},${this.style[1]},${this.style[2]}`;
+    this.r = ~~range(2,6);
+    this.r2 = 2*this.r;
+    this.replace();
+  }
 
-  replace: ->
-    @opacity = 0
-    @dop = 0.03*range(1,4)
-    @x = range(-@r2,w-@r2)
-    @y = range(-20,h-@r2)
-    @xmax = w-@r
-    @ymax = h-@r
-    @vx = range(0,2)+8*xpos-5
-    @vy = 0.7*@r+range(-1,1)
+  replace() {
+    this.opacity = 0;
+    this.dop = 0.03*range(1,4);
+    this.x = range(-this.r2,w-this.r2);
+    this.y = range(-20,h-this.r2);
+    this.xmax = w-this.r;
+    this.ymax = h-this.r;
+    this.vx = (range(0,2)+(8*xpos))-5;
+    return this.vy = (0.7*this.r)+range(-1,1);
+  }
 
-  draw: ->
-    @x += @vx
-    @y += @vy
-    @opacity += @dop
-    if @opacity > 1
-      @opacity = 1
-      @dop *= -1
-    @replace() if @opacity < 0 or @y > @ymax
-    if !(0 < @x < @xmax)
-      @x = (@x + @xmax) % @xmax
-    drawCircle(~~@x,~~@y,@r,"#{@rgb},#{@opacity})")
+  draw() {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.opacity += this.dop;
+    if (this.opacity > 1) {
+      this.opacity = 1;
+      this.dop *= -1;
+    }
+    if ((this.opacity < 0) || (this.y > this.ymax)) { this.replace(); }
+    if (!(0 < this.x && this.x < this.xmax)) {
+      this.x = (this.x + this.xmax) % this.xmax;
+    }
+    return drawCircle(~~this.x,~~this.y,this.r,`${this.rgb},${this.opacity})`);
+  }
+}
 
 
-confetti = (new Confetti for i in [1..NUM_CONFETTI])
+const confetti = (__range__(1, NUM_CONFETTI, true).map((i) => new Confetti));
 
-window.step = ->
-  requestAnimationFrame(step)
-  context.clearRect(0,0,w,h)
-  c.draw() for c in confetti
+window.step = function() {
+  requestAnimationFrame(step);
+  context.clearRect(0,0,w,h);
+  return Array.from(confetti).map((c) => c.draw());
+};
 
-step()
-
+step();
+function __range__(left, right, inclusive) {
+  let range = [];
+  let ascending = left < right;
+  let end = !inclusive ? right : ascending ? right + 1 : right - 1;
+  for (let i = left; ascending ? i < end : i > end; ascending ? i++ : i--) {
+    range.push(i);
+  }
+  return range;
+}
