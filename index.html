@@ -90,13 +90,27 @@ function aud_play_pause() {
 
 <center>
 <div class="align-center" style="background-color:#6633ff">
-  <a class="btn btn-danger btn-black-outline mbr-editable-button" style="position:relative" align="center" onclick="aud_play_pause(); this.value='STOP THE FUNK'" href="javascript:void(0);">GET FUNKY</a>
+  <a class="btn btn-danger btn-black-outline mbr-editable-button" id="toggle" style="position:relative" align="center" onclick="aud_play_pause()" href="javascript:void(0);">GET FUNKY</a>
 </div>
   </center>
+
+   <script>
+
+            function myFunction() {
+                var change = document.getElementById("toggle");
+                if (change.innerHTML == "GET FUNKY")
+                {
+                    change.innerHTML = "STOP THE FUNK";
+                }
+                else {
+                    change.innerHTML = "GET FUNKY";
+                }
+            }
+
+        </script>
   
 <br>
 <br>
-  onclick="this.value='Close Curtain'"
     
 </body>
 </html>
