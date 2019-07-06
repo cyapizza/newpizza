@@ -11,8 +11,8 @@ body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages
 
 body {
   padding: 40px 0;
-  font-family: 'bebas', sans-serif;
-  background-color: #fff;
+  font-family: 'Sniglet', cursive;
+  background-color: rgba(255, 255, 255, 0);
 }
 body .textcontainer {
   padding: 40px 0;
