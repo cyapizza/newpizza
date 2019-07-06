@@ -246,7 +246,7 @@ nav .mbr-section-btn {
 
 /*! Btn icon margin */
 .btn .mbr-iconfont, .btn.btn-sm .mbr-iconfont {
-  cursor: pointer;
+  cursor: url(pizzacursor1.png), auto;;
   margin-right: 0.5rem; }
 
 .btn.btn-md .mbr-iconfont, .btn.btn-md .mbr-iconfont {
@@ -318,7 +318,7 @@ nav .mbr-section-btn {
   position: relative;
   text-decoration: none;
   transition: all .3s ease-in-out;
-  cursor: pointer;
+  cursor: url(pizzacursor1.png), auto;
   text-align: center; }
   .mbr-arrow-up a:hover {
     background-color: rgba(0, 0, 0, 0.4); }
@@ -349,7 +349,7 @@ nav .mbr-section-btn {
   left: 50%;
   width: 60px;
   height: 60px;
-  cursor: pointer;
+  cursor: url(pizzacursor1.png), auto;
   background-color: rgba(80, 80, 80, 0.5);
   border-radius: 50%;
   -webkit-transform: translateX(-50%);
