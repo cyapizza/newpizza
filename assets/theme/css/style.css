@@ -7,6 +7,8 @@
   cursor: url(../assets/images/pizzacursor1.png), auto;
 }
 
+body { cursor: url(assets/images/pizzacursor1.png), default; }
+
 section {
   background-color: #eeeeee; }
 
