@@ -21,7 +21,7 @@ body .textcontainer {
 body .particletext {
   text-align: center;
   font-size: 80px;
-  position: relative;
+  position: absolute;
 }
 body .particletext.bubbles > .particle {
   opacity: 0;
