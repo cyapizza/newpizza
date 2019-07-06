@@ -1101,7 +1101,3 @@
         $(e.target).parents('.form-group').find('.value')[0].innerHTML = e.target.value;
     });
 })(jQuery);
-
-var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
-confetti.render();
