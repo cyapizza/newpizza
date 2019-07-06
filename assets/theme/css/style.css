@@ -2,6 +2,15 @@
  * Mobirise v4 theme (https://mobirise.com/)
  * Copyright 2017 Mobirise
  */
+
+canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+
 section {
   background-color: #eeeeee; }
 
@@ -529,11 +538,4 @@ input[type="range"] {
 body {
 	/*You can use any kind of background here.*/
 	background: #6b92b9;
-}
-canvas {
-	display: block;
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	overflow: hidden;
 }
