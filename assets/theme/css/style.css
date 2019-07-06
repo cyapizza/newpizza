@@ -9,24 +9,49 @@
 
 body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages/pizzacursor1.png'), default; }
 
+@-webkit-keyframes confetti {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: translateY(-800%) rotate(270deg);
+            transform: translateY(-800%) rotate(270deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000%) rotate(1440deg);
+            transform: translateY(2000%) rotate(1440deg);
+  }
+}
 @keyframes confetti {
-   0% {
-      opacity:0;
-      transform:translateY(0%) rotate(0deg);
-   }
-   10% {
-      opacity:1;
-   }
-   35% {
-      transform:translateY(-800%) rotate(270deg);
-   }
-   80% {
-      opacity:1;
-   }
-   100% {
-      opacity:0;
-      transform:translateY(2000%) rotate(1440deg);
-   }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: translateY(-800%) rotate(270deg);
+            transform: translateY(-800%) rotate(270deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000%) rotate(1440deg);
+            transform: translateY(2000%) rotate(1440deg);
+  }
 }
 
 section {
