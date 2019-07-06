@@ -4,10 +4,10 @@
  */
 
 .custom {
-  cursor: url(../assets/images/pizzacursor1.png), auto;
+  cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages/pizzacursor1.png'), auto;
 }
 
-body { cursor: url(assets/images/pizzacursor1.png), default; }
+body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages/pizzacursor1.png'), default; }
 
 section {
   background-color: #eeeeee; }
