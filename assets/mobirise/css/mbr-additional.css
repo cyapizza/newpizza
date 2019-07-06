@@ -7,6 +7,8 @@
 body {
   font-style: normal;
   line-height: 1.5;
+& when (@bg-type = '#ff3366') {
+  background-color: transparent;
 }
 .mbr-section-title {
   font-style: normal;
