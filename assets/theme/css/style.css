@@ -11,6 +11,10 @@ canvas {
 	overflow: hidden;
 }
 
+.custom {
+  cursor: url(pizzacursor1.png), auto;
+}
+
 section {
   background-color: #eeeeee; }
 
