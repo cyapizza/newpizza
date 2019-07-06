@@ -33,7 +33,7 @@ a.mbr-iconfont:hover {
 a {
   font-style: normal;
   font-weight: 400;
-  cursor: pointer; }
+  cursor: url(pizzacursor1.png), auto; }
   a, a:hover {
     text-decoration: none; }
 
