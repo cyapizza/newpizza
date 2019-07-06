@@ -3,6 +3,8 @@
  * Copyright 2017 Mobirise
  */
 
+cursor: url(pizzacursor1.png), auto;
+
 canvas {
 	display: block;
 	width: 100%;
