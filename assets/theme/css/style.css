@@ -12,6 +12,7 @@ body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages
 body .belowconfetti {
   text-align: center;
   font-size: 40px;
+  font-size; 3.5vw;
   position: relative;
 }
 
@@ -29,6 +30,7 @@ body .textcontainer {
 body .particletext {
   text-align: center;
   font-size: 100px;
+  font-size; 3.5vw;
   position: relative;
   color: #FFFFFF;
 }
