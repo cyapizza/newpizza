@@ -9,6 +9,12 @@
 
 body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages/pizzacursor1.png'), default; }
 
+body .belowconfetti {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+
 body {
   padding: 10px 0;
   font-family: 'Luckiest Guy';
