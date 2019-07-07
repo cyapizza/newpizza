@@ -16,13 +16,13 @@ body .belowconfetti {
 }
 
 body {
-  padding: 2vw 0;
+  padding: 10px 0;
   font-family: 'Luckiest Guy';
   background-color: rgba(255, 255, 255, 0);
   color: #FFFFFF;
 }
 body .textcontainer {
-  padding: 2vw 0;
+  padding: 10px 0;
   text-align: center;
   color: #FFFFFF;
 }
