@@ -18,13 +18,11 @@ body .belowconfetti {
 }
 
 body {
-  padding: 0vw;
   font-family: 'Luckiest Guy';
   background-color: rgba(255, 255, 255, 0);
   color: #FFFFFF;
 }
 body .textcontainer {
-  padding: 0vw;
   text-align: center;
   color: #FFFFFF;
 }
@@ -32,7 +30,7 @@ body .particletext {
   text-align: center;
   font-size: 15vw;
   position: relative;
-  padding-top: 10vw;
+  padding-top: 20vw;
   padding-bottom: 0vw;
   color: #FFFFFF;
 }
