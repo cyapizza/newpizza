@@ -26,7 +26,7 @@ body .textcontainer {
 body .particletext {
   font-family: 'Luckiest Guy';
   text-align: center;
-  font-size: calc(60px + 2vw);
+  font-size: calc(60px + 4vw);
   position: relative;
   padding: 0;
   margin: 0;
