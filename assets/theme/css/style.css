@@ -12,11 +12,13 @@ body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages
 body .belowconfetti {
   text-align: center;
   font-size: 5vw;
+  padding-top: 0px;
+  padding-bottom: 10px;
   position: relative;
 }
 
 body {
-  padding: 10px;
+  padding: 0px;
   font-family: 'Luckiest Guy';
   background-color: rgba(255, 255, 255, 0);
   color: #FFFFFF;
@@ -30,6 +32,7 @@ body .particletext {
   text-align: center;
   font-size: 15vw;
   position: relative;
+  padding-top: 10px;
   padding-bottom: 0px;
   color: #FFFFFF;
 }
