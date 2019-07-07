@@ -11,7 +11,7 @@ body { cursor: url('https://raw.githubusercontent.com/cyapizza/newpizza/gh-pages
 
 body .belowconfetti {
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
   padding-top: 0vw;
   padding-bottom: 10vw;
   position: relative;
@@ -28,10 +28,9 @@ body .textcontainer {
 }
 body .particletext {
   text-align: center;
-  font-size: 15vw;
+  font-size: 12vw;
   position: relative;
-  padding-top: 20vw;
-  padding-bottom: 0vw;
+  padding: 0vw;
   color: #FFFFFF;
 }
 body .particletext.bubbles > .particle {
