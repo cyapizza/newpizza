@@ -30,7 +30,8 @@ body .particletext {
   text-align: center;
   font-size: 12vw;
   position: relative;
-  padding: 0vw;
+  padding: 0;
+  margin: 0;
   color: #FFFFFF;
 }
 body .particletext.bubbles > .particle {
