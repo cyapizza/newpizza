@@ -253,6 +253,9 @@ body {
 @media (max-width: 500px) {
     .btn-danger {
        margin-bottom: -20vw;
+       margin-top: -20vw;
+       width: 150%;
+       height: 150%;
   }
 }
 @media (min-width: 900px) {
