@@ -87,7 +87,7 @@ body {
   border-width: 2px;
   font-style: normal;
   letter-spacing: 1px;
-  margin: .2rem .2rem;
+  margin: .5rem .5rem;
   white-space: normal;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -99,7 +99,7 @@ body {
   -webkit-align-items: center;
   -webkit-justify-content: center;
   display: -webkit-inline-flex;
-  padding: .2rem .2rem;
+  padding: 1rem 1rem;
   border-radius: 3px;
 }
 .btn-sm {
