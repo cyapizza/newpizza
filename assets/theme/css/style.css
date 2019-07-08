@@ -24,7 +24,7 @@
     margin: auto;
 }
 .waveWrapperInner {
-    position: relative;
+    position: absolute;
     width: 100%;
     overflow: hidden;
     height: 10%;
