@@ -6,6 +6,7 @@
 @media (max-width: 500px) {
     body {
 	    bottom: -10vh;
+	    top: 10vh;
   }
 
 @keyframes move_wave {
