@@ -34,11 +34,11 @@
 }
 .bgTop {
     z-index: 15;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .bgMiddle {
     z-index: 10;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .bgBottom {
     z-index: 5;
@@ -51,7 +51,7 @@
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
     transform-origin: center bottom;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .waveTop {
     background-size: 50% 100px;
