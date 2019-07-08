@@ -251,7 +251,7 @@ body {
   overflow: hidden;
 }
 @media (max-width: 500px) {
-    .content{
+    .btn-danger {
        margin-bottom: -20vw;
   }
 }
