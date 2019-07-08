@@ -87,7 +87,7 @@ body {
   border-width: 2px;
   font-style: normal;
   letter-spacing: 1px;
-  margin: .4rem .8rem;
+  margin: .1rem .1rem;
   white-space: normal;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -99,7 +99,7 @@ body {
   -webkit-align-items: center;
   -webkit-justify-content: center;
   display: -webkit-inline-flex;
-  padding: 1rem 3rem;
+  padding: .5rem 1rem;
   border-radius: 3px;
 }
 .btn-sm {
@@ -253,9 +253,6 @@ body {
 @media (max-width: 500px) {
     .btn-danger {
        margin-bottom: -20vw;
-       margin-top: -20vw;
-       width: 150%;
-       height: 150%;
   }
 }
 @media (min-width: 900px) {
