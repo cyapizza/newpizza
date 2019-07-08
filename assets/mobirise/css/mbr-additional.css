@@ -106,7 +106,7 @@ body {
     .btn {
        font-weight: 650;
        margin: 1rem 1rem;
-       padding: 3rem 2rem;
+       padding: -5rem -5rem;
        border-width: 3px;
   }
 }
