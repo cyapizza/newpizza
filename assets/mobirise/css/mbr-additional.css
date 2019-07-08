@@ -102,6 +102,14 @@ body {
   padding: 1.5rem 1rem;
   border-radius: 3px;
 }
+@media (max-width: 500px) {
+    .btn {
+       font-weight: 650;
+       margin: 1rem 1rem;
+       padding: 3rem 2rem;
+       border-width: 3px;
+  }
+}
 .btn-sm {
   font-weight: 500;
   letter-spacing: 1px;
