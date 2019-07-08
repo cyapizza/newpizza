@@ -255,6 +255,11 @@ body {
        margin-bottom: -20vw;
   }
 }
+@media (min-width: 900px) {
+    .btn-danger {
+       margin-bottom: 10vw;
+  }
+}
 .btn-danger,
 .btn-danger:active {
   background-color: #eda81c !important;
