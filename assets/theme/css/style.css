@@ -29,8 +29,7 @@
     bottom: 0;
     width: 100%;
     overflow: hidden;
-    height: 10%;
-    background-color: #6633ff;
+    height: 20%;
 }
 .bgTop {
     z-index: 15;
