@@ -257,7 +257,7 @@ body {
 }
 @media (min-width: 900px) {
     .btn-danger {
-       margin-bottom: 10vw;
+       margin-bottom: 5vw;
   }
 }
 .btn-danger,
