@@ -34,7 +34,6 @@
 }
 @media (max-width: 500px) {
     .waveWrapperInner {
-	    position:relative;
 	    bottom: -10px;
   }
 }
