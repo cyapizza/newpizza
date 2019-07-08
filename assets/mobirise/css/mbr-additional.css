@@ -257,14 +257,14 @@ body {
 .btn-danger.focus,
 .btn-danger.active {
   color: #ffffff !important;
-  background-color: #c9901e !important;
-  border-color: #c9901e !important;
+  background-color: #d6a440 !important;
+  border-color: #d6a440 !important;
 }
 .btn-danger.disabled,
 .btn-danger:disabled {
   color: #ffffff !important;
-  background-color: #d19724 !important;
-  border-color: #d19724 !important;
+  background-color: #b88c35 !important;
+  border-color: #b88c35 !important;
 }
 .btn-white {
   color: #333333 !important;
