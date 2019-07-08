@@ -246,6 +246,9 @@ body {
   background-color: #617479 !important;
   border-color: #617479 !important;
 }
+.btn-danger {
+  z-index: 50;
+}
 .btn-danger,
 .btn-danger:active {
   background-color: #eda81c !important;
