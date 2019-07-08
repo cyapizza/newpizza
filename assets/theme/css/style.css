@@ -25,10 +25,11 @@
 }
 .waveWrapperInner {
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
     overflow: hidden;
     height: 10%;
-    bottom: -1px;
     background-color: #6633ff;
 }
 .bgTop {
