@@ -248,7 +248,7 @@ body {
 }
 .btn-danger {
   z-index: 50;
-  margin-bottom: 0;
+  margin-bottom: -20vw;
   overflow: hidden;
 }
 .btn-danger,
