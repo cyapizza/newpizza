@@ -13,14 +13,14 @@ body .belowconfetti {
   text-align: center;
   font-family: 'Luckiest Guy';
   font-size: calc(15px + 2vw);
-  padding-top: 0vw;
-  padding-bottom: 10vw;
+  padding: 0;
   position: relative;
   color: #F4F4F4;
 }
 
 body .textcontainer {
   text-align: center;
+  padding: 0;
 }
 
 body .particletext {
