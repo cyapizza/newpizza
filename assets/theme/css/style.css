@@ -34,7 +34,7 @@
 }
 @media (max-width: 500px) {
     .waveWrapperInner {
-	    bottom: -10px;
+	    bottom: 10vh;
   }
 }
 .bgTop {
