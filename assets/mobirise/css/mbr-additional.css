@@ -250,11 +250,6 @@ body {
   z-index: 50;
   overflow: hidden;
 }
-@media (max-width: 500px) {
-    .btn-danger {
-       margin-bottom: 20vw;
-  }
-}
 @media (min-width: 900px) {
     .btn-danger {
        margin-bottom: 5vw;
