@@ -3,12 +3,6 @@
  * Copyright 2017 Mobirise
  */
 
-@media (max-width: 500px) {
-    body {
-	    height: 80%;
-  }
-}
-
 @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
