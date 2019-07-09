@@ -32,11 +32,6 @@
     background-color: rgba(0, 0, 0, 0);
     height: 20%;
 }
-@media (max-width: 500px) {
-    .waveWrapperInner {
-	    bottom: 10vh;
-  }
-}
 .bgTop {
     z-index: 15;
     opacity: 0.4;
